@@ -49,3 +49,9 @@
             -> Stores text in a Vector db and retrieves the most relevant block of text
         -> Entity momories
             -> Using an LLM, it remembers details about specific entities.
+
+-Chain in LangChain
+    -> Sequntial chain: Combine multiple chaing
+        - SimpleSequentialChain: Single input/Output
+        - SequentialChain: multiple inputs/outputs
+        - Router Chain:
