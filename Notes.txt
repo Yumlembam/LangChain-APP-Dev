@@ -30,3 +30,22 @@
 - Models, Prompts and parsers
     -> Prompts can be long and detailed
     -> Wrapping them in LangChain Prompt makes it easier to reuse
+
+
+-Memory
+    -> LLM are stateless
+    -> Each transaction is independent
+    -> Chatbots appear to have memory by providing the full conversation as 'context'
+    -> Different types of memory
+        -> Conversation Buffer Memory
+            - stores of memory and then etract the messages in a variable
+        -> ConverstationBufferWindowMemory
+            - list of interactions of the conv over time it only uses the last k interactions
+        -> ConverstationBufferWindowMemory
+            -> keeps a Buffer of recent interactions in memory and uses a token length rather than number of interactions
+        -> ConversatoinSummaryMemory
+            -> This memory creates a summary of the conv over time
+        -> Vector data memory
+            -> Stores text in a Vector db and retrieves the most relevant block of text
+        -> Entity momories
+            -> Using an LLM, it remembers details about specific entities.
